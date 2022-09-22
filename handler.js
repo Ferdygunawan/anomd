@@ -441,7 +441,7 @@ export async function handler(chatUpdate) {
             lastturu: 0,
             lastseen: 0,
             lastSetStatus: 0,
-            registered: false,
+            registered: true,
             apel: 20,
             mangga: 0,
             stroberi: 0,
@@ -453,10 +453,10 @@ export async function handler(chatUpdate) {
             regTime: -1,
             premium: false, 
             premiumTime: 0,
-            job: 'Pengangguran', 
+            job: 'Wibu Nolep', 
             lbars: '[▒▒▒▒▒▒▒▒▒]', 
             role: 'Newbie ㋡', 
-            registered: false,
+            registered: true,
             name: conn.getName(m.sender),
             age: -1,
             regTime: -1,
@@ -538,7 +538,7 @@ export async function handler(chatUpdate) {
                 if (!('restrict' in settings)) settings.restrict = false
             } else global.db.data.settings[this.user.jid] = {
                 self: false,
-                autoread: false,
+                autoread: true,
                 restrict: false
             }
         } catch (e) {
